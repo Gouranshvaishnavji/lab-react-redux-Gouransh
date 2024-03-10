@@ -8,13 +8,13 @@ const App = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className='app-container'>
-      <div id='counter'>
-        <h1 className='counter-text'>{count}</h1>
-        <button className='like-btn' onClick={() => dispatch(increment())}>
+    <div className='container'>
+      <div id='counterid'>
+        <h1 className='counter'>{count}</h1>
+        <button className='like' onClick={() => dispatch(increment())}>
           Like
         </button>
-        <button className='unlike-btn' onClick={() => dispatch(decrement())}>
+        <button className='unlike' onClick={() => dispatch(decrement())}>
           Unlike
         </button>
 
